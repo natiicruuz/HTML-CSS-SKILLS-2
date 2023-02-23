@@ -1,0 +1,126 @@
+<!DOCTYPE html> <!--INDEX, PÁGINA PRINCIPAL DEL SITIO WEB -->
+<html>
+<!--DOCUMENTACIÓN -->
+
+<head> <!-- inicio de HEAD-->
+	<title>Página Principal</title>
+	<!--permite que se reconozcan tildes y letra ñ-->
+	<meta charset="utf8"/>
+	<!--vincula la hoja de estilos extena a esta -->
+	<link rel="stylesheet" type="text/css" href="ESTILOS/Natalia.css">
+	
+	<style> /*hoja de estilos internos */
+
+	ul { /* Es la barra en el fondo */
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
+	}
+
+	li { /*indica en donde debe de "flotar" el elemento */
+	  float: left;
+	}
+
+	li a { /*Es el contenido que está dentro del li */
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 15px 15px;
+	  text-decoration: none;
+	}
+
+	li a:hover:not(.active) { /*hace que cambie de color cuando el cursor está encima de un li */
+	  background-color: #111;
+	}
+
+	.dropbtn{
+		background-color: #41787A;
+	}
+
+	li a, .dropbtn { /*contenido dentro de un li con class dropbtn */
+	  display: inline-block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	li a:hover, .dropdown:hover .dropbtn { /*hace que cuando se tenga el cursor encima haga hover y cambie de color a rojo */
+	  background-color: #67C299;
+	}
+
+	li.dropdown { 
+		display: inline-block;
+	}
+
+	.dropdown-content { /*muestra el contenido del dropdown */
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a { /*muestra el contenido del dropdown pero lo que está dentro de eso(textos) */
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	}
+
+	.dropdown-content a:hover {background-color: #f1f1f1;} /*hover al estar encima del bloque cambia de color */
+
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	}
+
+	</style> 
+
+</head> <!--Fin de HEAD-->
+
+<body bgcolor="#EAECEE"> <!-- inicio de BODY con bg color -->
+	<header style="text-align: center; font-family: Arial">Páginas web para un buen desarrollador</header> <!-- header alineado al centro-->
+	<h1 class="TITULOS">MENÚ PRINCIPAL</h1> <!-- titulo de la página-->
+	<hr width="40%" size="3" align="middle" color="black"> <!-- línea debajo de tituo lo, no abarca toda la página-->
+
+	
+	<ul> <!-- abre lista-->
+		<li><a href="Pagina 2.html">Pagina 2</a></li>
+		<li><a href="Pagina 3.html">Página 3</a></li>
+		<li><a href="Pagina 4.html">Página 4</a></li>
+		<li><a href="Pagina 5.html">Página 5</a></li>
+		<li><a href="Pagina 6.html">Página 6</a></li>
+	</ul> <!-- cierra lista-->
+	
+
+	<br>
+
+	<h2 class="SUBTITULOS">Mis Sitios Favoritos</h2> <!-- Subtititulo con el estilo .SUBTITULOS de la hoja de estilos externa Natalia.css-->
+
+	<div class="dropdown"> <!-- Se hace un div para que se pueda hacer la caja en donde se va a meter la lista-->
+	    <button class="dropbtn">Ir a los Sitios</button> <!-- usa estilos internos .dropbtn-->
+		    <div class="dropdown-content"> <!-- usa estilos internos-->
+		      <a href="https://www.stackoverflow.com/">Ir a Stack Overflow</a>
+		      <a href="https://www.codechef.com/">Ir a Code Chef</a>
+		      <a href="https://www.w3schools.com">Ir a w3scools</a>
+		    </div>
+	 </div>
+
+	<br> <!-- Deja un espacio-->
+
+	<center> <!-- alinea al centro para meter una imagen que abarque casi toda la página -->
+		<img src="IMAGENES/progra.jpg" alt="programación" width="1200" height="450">	
+	</center>
+
+		<div> <!-- contador de visitantes-->
+		<center><h1><font color="#E74C3C">Visitante Número:</font></h1><script type="text/javascript" src="http://counter5.allfreecounter.com/private/countertab.js?c=e9113d3a1ebc46f593dac7507c0859e9"></script></center>
+
+	<!--footer para dar información final -->
+	<footer style="text-align: center;font-family: Arial;">Natalia Cruz Babbar, 10-6a, Técnico de Calle Blancos</footer>
+
+</body> <!-- FIN DEL BODY-->
+</html>

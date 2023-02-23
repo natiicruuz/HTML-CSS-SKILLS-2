@@ -1,0 +1,36 @@
+/*hoja de estilos externa Natalia Cruz Babbar */
+
+.TITULOS{ /*Tipo de letra: Verdana, tamaño 40px, color celeste,alineado al centro, y con negrita aplicada*/
+	font-family:verdana; 
+	font-size:40px;
+	color: #7BB2C3;
+	text-align: center;
+	text-decoration: bold;
+}
+
+.SUBTITULOS{ /*tipo de letra: courier, tamaño 30px,color negrom alineado al centro y con delineado aplicado*/
+	font-family: Courier;
+	font-size: 30px;
+	color: #E74C3C;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.TEXTONORMAL{ /*Tipo de letra: arial, tamaño: 20px; color negro*/
+	font-family: Arial;
+	font-size: 20px;
+	color: black;
+}
+
+.TEXTOIZQUIERDA{ /*Texto orientado a la izquierda*/
+	text-align: left;
+}
+
+.TEXTODERECHA{ /* Texto orientado a la derecha*/
+	text-align: right;
+}
+
+.TEXTOCENTRO{ /* Texto orientado al centro*/
+	text-align: center;
+	align-items: center;
+}
